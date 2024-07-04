@@ -450,3 +450,7 @@ function App() {
 }
 
 export default App
+build: {
+    rollupOptions: {
+      external: ['styled-components']
+    }}
