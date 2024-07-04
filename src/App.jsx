@@ -58,16 +58,12 @@ const Container = styled.section`
  flex-direction:column;
  align-items:center;
  justify-content:center;
- 
-
 `
-
 const Figuras = styled.figure`
 width:75vw;
 display:flex;
 justify-content:center;
 justify-content:space-evenly;
-
 
 img{ 
   border:solid;
@@ -82,20 +78,14 @@ img{
     width:100%;
     height:67vh;
     flex-wrap:wrap;
-    
-
     img{
       width:130px;
-      height:230px;
-     
-    }
-  }
+      height:230px;  }}
   @media(max-width: 390px){
     width:100%;
     height:67vh;
-    flex-wrap:wrap;
-  }
-      `
+    flex-wrap:wrap;}
+  `
 
 const Secao = styled.section`
  display:flex;
@@ -299,7 +289,6 @@ function App() {
       <EstiloGlobal />
       <Navbar>
         <img src={Logo} alt="Logo studio ghibli" />
-        {/* <h1>Studio Ghibli</h1> */}
       </Navbar>
 
       <Corpo>
@@ -307,7 +296,7 @@ function App() {
           <Secao>
             <Figuras>
               {filmesInfor.map((item) => (
-                //cada imagem vai ser utilizada como botão selecionada  aqui.
+                //cada imagem vai ser utilizada como botão 
                 <img
                   src={item.imagem}
                   alt={item.nome}
@@ -320,7 +309,7 @@ function App() {
           <Secao>
             <Figuras>
               {filmesInfor2.map((item) => (
-                //cada imagem vai ser utilizada como botão selecionada  aqui.
+                //cada imagem vai ser utilizada como botão 
                 <img
                   src={item.imagem}
                   alt={item.nome}
@@ -332,7 +321,7 @@ function App() {
           <Secao>
             <Figuras>
               {filmesInfor3.map((item) => (
-                //cada imagem vai ser utilizada como botão selecionada  aqui.
+                //cada imagem vai ser utilizada como botão s
                 <img
                   src={item.imagem}
                   alt={item.nome}
@@ -346,7 +335,7 @@ function App() {
 
             <Figuras>
               {filmesInfor4.map((item) => (
-                //cada imagem vai ser utilizada como botão selecionada  aqui.
+                //cada imagem vai ser utilizada como botão 
                 <img
                   src={item.imagem}
                   alt={item.nome}
